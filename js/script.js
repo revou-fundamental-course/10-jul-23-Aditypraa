@@ -42,4 +42,15 @@ function countBmi() {
   }
 
   let bmi = Number(p[2]) / (((Number(p[1]) / 100) * Number(p[1])) / 100);
+
+  let result = "";
+  if (bmi < 18.5) {
+    result = "Underwight";
+  } else if (18.5 <= bmi && bmi <= 29.9) {
+    result = "Overweight";
+  } else if (30 <= bmi && bmi <= 34.9) {
+    result = "Obese";
+  } else if (35 <= bmi) {
+    result = "Extremely Obese";
+  }
 }
