@@ -67,6 +67,6 @@ function countBmi() {
   document.querySelector("#result").innerHTML = bmi.toFixed(2);
 }
 
-// span.onclick = function () {
-//   modal.style.display = "none";
-// };
+span.onclick = function () {
+  modal.style.display = "none";
+};
