@@ -34,16 +34,22 @@ function calculate() {
 }
 
 function countBmi() {
+  //Create array and value array
   let p = [age.value, height.value, weight.value];
+
+  // conditional for checked
   if (male.checked) {
     p.push("male");
   } else if (female.checked) {
     p.push("female");
   }
 
+  // Rumus calculate IMT
   let bmi = Number(p[2]) / (((Number(p[1]) / 100) * Number(p[1])) / 100);
 
-  let result = "";
+  let result = ""; // Variabel Hasil
+
+  //   Conditional Berat Badan
   if (bmi < 18.5) {
     result = "Underwight";
   } else if (18.5 <= bmi && bmi <= 29.9) {
@@ -53,4 +59,14 @@ function countBmi() {
   } else if (35 <= bmi) {
     result = "Extremely Obese";
   }
+
+  resultArea.style.display = "block";
+  document.querySelector(
+    ".comment"
+  ).innerHTML = `You are <span id ="comment">${result}</span>`;
+  document.querySelector("#result").innerHTML = bmi.toFixed(2);
 }
+
+// span.onclick = function () {
+//   modal.style.display = "none";
+// };
