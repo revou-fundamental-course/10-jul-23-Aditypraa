@@ -27,7 +27,7 @@ function calculate() {
     (male.checked == false && female.checked == false)
   ) {
     modal.style.display = "block";
-    modalText.innerHtml = "All Field Are Required!";
+    modalText.innerHTML = "All Field Are Required!";
   } else {
     countBmi();
   }
