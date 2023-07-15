@@ -13,7 +13,7 @@ This project was created using HTML, CSS and Javascript. This project was made f
 
 ###
 
-<img align="right" height="150" src="assets/images/logo.png"/>
+<img align="right" height="150" src="https://github.com/revou-fundamental-course/10-jul-23-Aditypraa/assets/95411404/501a6301-3a60-4902-aefc-2612bc464613"/>
 
 ###
 
@@ -70,3 +70,20 @@ This project was created using HTML, CSS and Javascript. This project was made f
     <img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="facebook logo"  />
   </a>
 </div>
+
+## Installation
+
+Install My-Project : CALCULATOR BMI in Local Repository
+
+```bash
+  git clone https://github.com/revou-fundamental-course/10-jul-23-Aditypraa.git
+  
+  cd 10-jul-23-Aditypraa
+
+  code .
+```
+    
+## Authors
+
+- [@aditypraa](https://www.github.com/aditypraa)
+
