@@ -14,27 +14,28 @@
         <div class="box">
             <h1>BMI Calculator</h1>
 
-            <!-- Input Age -->
-            <div class="input">
-                <label for="height">Age</label>
-                <input type="text" class="text-input" id="age" autocomplete="off" required>
-            </div>
-            <!-- End Input Age -->
+            <div class="content">
+                <!-- Input Age -->
+                <div class="input">
+                    <label for="height">Age</label>
+                    <input type="text" class="text-input" id="age" autocomplete="off" required>
+                </div>
+                <!-- End Input Age -->
 
-            <!-- Options Gender -->
-            <div class="gender">
+                <!-- Options Gender -->
+                <div class="gender">
+                    <label class="container">
+                        <input type="radio" name="radio" id="m">
+                        <p class="text">Male</p>
+                        <span class="checkmark"></span>
+                    </label>
 
-                <label class="container">
-                    <input type="radio" name="radio" id="m">
-                    <p class="text">Male</p>
-                    <span class="checkmark"></span>
-                </label>
-
-                <label class="container">
-                    <input type="radio" name="radio" id="f">
-                    <p class="text">Female</p>
-                    <span class="checkmark"></span>
-                </label>
+                    <label class="container">
+                        <input type="radio" name="radio" id="f">
+                        <p class="text">Female</p>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
             </div>
             <!-- End Option Gender -->
@@ -58,16 +59,24 @@
             <!-- Button submit start function calculate() -->
             <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
             <!-- end Button submit -->
+
+            <!-- the result of the calculation -->
+            <div class="result">
+                <p>Your BMI is</p>
+                <div id="result">00.00</div>
+                <p class="comment"></p>
+            </div>
+            <!-- End Result the Calculate -->
         </div>
 
-        <!-- the result of the calculation -->
-        <div class="result">
-            <p>Your BMI is</p>
-            <div id="result">00.00</div>
-            <p class="comment"></p>
-        </div>
-        <!-- End Result the Calculate -->
+        <footer>
+            <div class="footer"><a class="footer-text" target="_blank" href="https://github.com/Aditypraa">Aditya
+                    Pratama</a>
+            </div>
+        </footer>
     </div>
+
+
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -80,11 +89,7 @@
     </div>
     <!-- End Modal Content -->
 
-    <footer>
-        <div class="footer"><a class="footer-text" target="_blank" href="https://github.com/Aditypraa">Aditya
-                Pratama</a>
-        </div>
-    </footer>
+
 
     <script src="js/script.js"></script>
 </body>
